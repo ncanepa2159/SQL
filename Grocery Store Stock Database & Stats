@@ -1,0 +1,27 @@
+--Create a grocery store database
+
+CREATE TABLE Grocery_Store_Stock (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO Grocery_Store_Stock VALUES (1, "Apples", "Produce", 2.49, 450);
+INSERT INTO Grocery_Store_Stock VALUES (2, "Grapes", "Produce", 1.50, 375);
+INSERT INTO Grocery_Store_Stock VALUES (3, "Carrots", "Produce", 0.75, 500);
+INSERT INTO Grocery_Store_Stock VALUES (4, "Milk", "Dairy", 3.49, 350);
+INSERT INTO Grocery_Store_Stock VALUES (5, "Flour", "Pantry_Goods, 1.49, 700);
+INSERT INTO Grocery_Store_Stock VALUES (6, "Cheese", "Dairy", 2.25, 250);
+INSERT INTO Grocery_Store_Stock VALUES (7, "Wine", "Alcohol", 5.25, 275); 
+INSERT INTO Grocery_Store_Stock VALUES (8, "Ale", "Alcohol", 3.25, 375);
+INSERT INTO Grocery_Store_Stock VALUES (9, "Jam", "Pantry_Good", 0.75, 250);
+INSERT INTO Grocery_Store_Stock VALUES (10, "Fish", "Meat", 2.15, 200);
+INSERT INTO Grocery_Store_Stock VALUES (11, "Pork", "Meat", 3.50, 150);
+INSERT INTO Grocery_Store_Stock VALUES (12, "Wheat", "Pantry_Good", 1.15, 375);
+INSERT INTO Grocery_Store_Stock VALUES (13, "Salt", "Pantry_Good", 0.75, 585);
+INSERT INTO Grocery_Store_Stock VALUES (14, "Pepper", "Pantry_Good", 0.65, 675);
+INSERT INTO Grocery_Store_Stock VALUES (15, "Bananas", "Produce", 0.25, 450);
+
+--display the database ordered by price. 
+SELECT * FROM Grocery_Store_Stock
+ORDER BY price desc; 
+
+--display the database ordered by quantity.
+SELECT * FROM Grocery_Store_Stock
+ORDER BY quantity desc;
