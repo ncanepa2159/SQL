@@ -1,0 +1,611 @@
+--Create a Database of Famous Authors, their favorite food dishes, and the series they wrote--
+
+CREATE TABLE Famous_Authors 
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+Name TEXT,
+Birthday INTEGER,
+Current_Age TEXT);
+    
+INSERT INTO Famous_Authors 
+(Name, Birthday, Current_Age) 
+VALUES 
+("J. R. R. Tolkien", "01/03/1892", "DECEASED");
+
+INSERT INTO Famous_Authors 
+(Name, Birthday, Current_Age) 
+VALUES 
+("C. S. Lewis", "11/29/1898", "DECEASED");
+
+INSERT INTO Famous_Authors 
+(Name, Birthday, Current_Age)  
+VALUES 
+("Stephen King", "09/21/1947", "75");
+
+INSERT INTO Famous_Authors 
+(Name, Birthday, Current_Age) 
+VALUES 
+("Katherine Applegate", "10/09/1956" ,"66");
+
+INSERT INTO Famous_Authors 
+(Name, Birthday, Current_Age) 
+VALUES 
+("George R. R. Martin", "09/20/1948", "74");
+
+
+CREATE table Favorite_Foods
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+person_id INTEGER,
+Dish_Name TEXT);
+    
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name) 
+VALUES (1, "Marinated Mushroom Salad");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name) 
+VALUES (1, "Spiced Yogurt");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name) 
+VALUES (1, "Beef Stew");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (2, "Cinnamon Bourbon Rice Pudding");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (2, "Strawberries and Cream");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (2, "Chicken Cutlets with Green Peas");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (3, "Baked Salmon");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (3, "Jambalaya Rice");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (3, "Cheesecake");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (4, "Popcorn");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (5, "Barbecue");
+
+INSERT INTO Favorite_Foods
+(person_id, Dish_Name)
+VALUES (5, "Mexican");
+
+
+CREATE table Book_Series
+(id INTEGER PRIMARY KEY AUTOINCREMENT,
+person_id INTEGER,
+Series_Name TEXT);
+    
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Hobbit");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Lord of the Rings");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Adventures of Tom Bombadil");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "Bilbo's Last Song");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Silmarillion");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, " Unfinished Tales of Númenor and Middle-earth");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The History of Middle-earth");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Children of Húrin");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "Beren and Lúthien");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (1, "The Fall of Númenor");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Allegory of Love");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Personal Heresy");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Problem of Pain");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Case for Christianity");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "A Preface to Paradise Lost ");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Abolition of Man");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Mere Christianity");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Miracles");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Surprised by Joy");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Four Loves");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Studies in Words");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The World's Last Night and Other Essays");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "An Experiment in Criticism");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "A Grief Observed");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "They Asked for a Paper");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Letters to Malcolm: Chiefly on Prayer");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Discarded Image");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "God in the Dock");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Weight of Glory and Other Addresses");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Pilgrim's Regress");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Space Trilogy");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Screwtape Letters");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Great Divorce");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "The Chronicles of Narnia");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Till We Have Faces");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (2, "Boxen: The Imaginary World of the Young C. S. Lewis");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Bill Hodges Trilogy");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Button Box");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Dark Tower: Beginnings");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Dark Tower: The Drawing of the Three");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Dark Tower: The Gunslinger");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Green Mile");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Outsider");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Secretary of Dreams");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Shining");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Talisman");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Carrie");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "'Salem's Lot");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Rage");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Stand");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Long Walk");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Dead Zone");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Firestarter");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Roadwork");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Cujo");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Running Man");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Christine");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Pet Sematary");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Thinner");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "It");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Eyes of the Dragon");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Misery");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Tommyknockers");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "One Past Midnight: The Langoliers");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Dark Half");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Needful Things");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Gerald's Game");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Dolores Claiborne");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Insomnia");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Rose Madder");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Desperation");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Regulators");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Bag of Bones");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Girl Who Loved Tom Gordon");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Dreamcatcher");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "From a Buick 8");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Colorado Kid");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Cell");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Lisey's Story");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Blaze");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Duma Key");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Under the Dome");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "11/22/63");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Joyland");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Revival");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Sleeping Beauties");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "The Institute");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Later");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Billy Summers");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Fairy Tale");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (3, "Holly");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Andalite Chronicles");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Doggo and Pupper");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Endling");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Eve and Adam");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Everworld");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Love Stories");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Making Out");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Making Waves");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Ocean City");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "The One and Only Ivan");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Remnants");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Roscoe Riley Rules");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Summer");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Animorphs");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Animorphs Graphix");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Animorphs, Alternamorphs");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Andalites, Animorphs, Megamorphs");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Pre-Animorphs");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Home of the Brave");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Crenshaw");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Wishtree");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Wilodeen");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "The Buffalo Storm");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Ivan: The Remarkable True Story of the Shopping Mall Gorilla");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Sometimes You Fly");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (4, "Odder");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "A Song Of Ice and Fire");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "Game Of Thrones: A Knight of the Seven Kingdoms");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "Game Of Thrones Graphic Novels");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "Game Of Thrones Non-Fiction");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "History Of House Targaryen Of Westeros");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "Targaryen History");
+
+INSERT INTO Book_Series
+(person_id, Series_Name) 
+VALUES (5, "Wild Cards");
+
+--display the database ordered by Authors, descending via id. 
+SELECT * FROM Famous_Authors;
+
+
+--display the database ordered by Authors and their reported favorite food dishes
+SELECT Famous_Authors.Name, Favorite_Foods.Dish_Name
+
+FROM Famous_Authors
+
+JOIN Favorite_Foods
+
+ON Famous_Authors.id = Favorite_Foods.person_id;
+    
+
+--display the database ordered by Authors and the book series they wrote
+SELECT Famous_Authors.Name, Book_Series.Series_Name
+
+FROM Famous_Authors
+
+JOIN Book_Series
+
+ON Famous_Authors.id = Book_Series.person_id;
