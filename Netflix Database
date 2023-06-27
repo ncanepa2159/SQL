@@ -1,3 +1,41 @@
+Copy and paste the "CREATE TABLE" and "INSERT INTO" queries from the SQL Fiddle database to the top of your project. For example, you could say 
+--This project utilized data from the following Netflix dataset--
+
+--
+How many movie titles are there in the database? (movies only, not tv shows)--
+ANSWER = 8
+SELECT COUNT(*)
+FROM "netflix_titles_info" Netflix_Titles
+WHERE type = 'Movie'
+
+--When was the most recent batch of tv shows and/or movies added to the database?--
+SELECT MAX(date(date_added))
+FROM "netflix_titles_info" Netflix_Titles
+
+--List all the movies and tv shows in alphabetical order--
+SELECT
+title
+FROM "netflix_titles_info"
+ORDER BY title ASC;
+
+--Who was the Director for the movie The Starling?--
+HINT: left join
+SELECT director 
+FROM "netflix_titles_info" Titles
+LEFT JOIN "netflix_people" people
+ON People.show_id = Titles.show_id
+WHERE Titles.title = 'The Starling'
+
+
+--What is the oldest movie in the database and what year was it made?--
+SELECT title, release_year 
+FROM "netflix_titles_info"
+WHERE type = 'Movie'
+AND release_year <= 
+(SELECT MIN(release_year) 
+FROM "netflix_titles_info"
+WHERE type = 'Movie'); 
+
 CREATE TABLE netflix_titles_info
     ("show_id" varchar(5), "type" varchar(7), "title" varchar(58), "country" varchar(74), "date_added" timestamp, "release_year" int, "rating" varchar(5), "duration" varchar(9), "listed_in" varchar(74))
 ;
